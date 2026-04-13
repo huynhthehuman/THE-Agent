@@ -117,13 +117,30 @@ def lark_event_handler():
     
     # Chỉ xử lý khi có tin nhắn mới gửi cho tới Agent
     if header.get("event_type") == "im.message.receive_v1":
-        message_id = event["message"]["message_id"]
+        msg_obj = event.get("message", {})
+        message_id = msg_obj.get("message_id")
+        chat_type = msg_obj.get("chat_type")
+        
+        # Bộ lọc cho Nhóm (Group)
+        if chat_type == "group":
+            mentions = msg_obj.get("mentions", [])
+            parent_id = msg_obj.get("parent_id")
+            # Chỉ trả lời nếu có tag (mentions) hoặc đang reply tin nhắn của bot (parent_id)
+            if len(mentions) == 0 and parent_id is None:
+                print("Bỏ qua tin nhắn Group vì Bot không được Tag hoặc Reply")
+                return jsonify({"status": "ok"}), 200
+
         # Phân giải chữ mà User đã gõ
         try:
-            content = json.loads(event["message"]["content"])
+            content = json.loads(msg_obj["content"])
             user_text = content.get("text", "")
-            print(f"📩 Nhận tin nhắn từ Group: {user_text}")
+            print(f"📩 Nhận tin nhắn từ Group/P2P: {user_text}")
             
+            # Giải mã chữ nếu có Tag (Xóa phần tag @_user_1 để AI không bị nhiễu)
+            if "@_user" in user_text:
+                import re
+                user_text = re.sub(r'@_user_[0-9]+', '', user_text).strip()
+
             # ĐẨY VÀO CHẠY NỀN ĐỂ TRẢ LỜI LARK NGAY TRONG 3 GIÂY
             threading.Thread(target=background_task, args=(message_id, user_text)).start()
             
