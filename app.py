@@ -4,6 +4,7 @@ import requests
 from flask import Flask, request, jsonify
 import google.generativeai as genai
 from dotenv import load_dotenv
+import threading
 
 # Tải cấu hình từ .env
 load_dotenv()
@@ -64,6 +65,11 @@ def send_lark_reply(message_id, text):
     else:
         print(f"✅ Đã trả lời thành công cho message_id: {message_id}")
 
+def background_task(message_id, user_text):
+    """Xử lý nền: Gọi AI và phản hồi Lark"""
+    bot_reply = generate_ai_response(user_text)
+    send_lark_reply(message_id, bot_reply)
+
 def generate_ai_response(user_text):
     """Nạp file Kiến thức vận hành THE Agent và yêu cầu AI suy luận"""
     root_path = os.path.dirname(os.path.abspath(__file__))
@@ -113,16 +119,13 @@ def lark_event_handler():
             user_text = content.get("text", "")
             print(f"📩 Nhận tin nhắn từ Group: {user_text}")
             
-            # Gửi cho AI phân tích
-            bot_reply = generate_ai_response(user_text)
-            
-            # Rep lại trên Lark
-            send_lark_reply(message_id, bot_reply)
+            # ĐẨY VÀO CHẠY NỀN ĐỂ TRẢ LỜI LARK NGAY TRONG 3 GIÂY
+            threading.Thread(target=background_task, args=(message_id, user_text)).start()
             
         except Exception as e:
             print("Lỗi đọc tin nhắn", e)
             
-    # Luôn phải trả về 200 để bấu với Lark rằng "Tôi đã xử lý xong"
+    # Luôn phải trả về 200 ngay lập tức để bấu với Lark rằng "Tôi đã nhận"
     return jsonify({"status": "ok"}), 200
 
 if __name__ == '__main__':
