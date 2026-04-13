@@ -1,0 +1,4 @@
+.env
+04_Backup_va_Archive/
+__pycache__/
+*.pyc

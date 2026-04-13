@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng giá Label vận chuyển nội địa US</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --accent: #f59e0b;
+            --text-main: #334155;
+            --bg-main: #f8fafc;
+            --table-border: #e2e8f0;
+            --table-header: #f1f5f9;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #fff;
+            color: var(--text-main);
+            font-size: 13px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--secondary);
+        }
+        .header h1 {
+            font-size: 32px;
+            color: var(--primary);
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .header p {
+            font-size: 15px;
+            color: #64748b;
+            margin: 0;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 25px 0 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 20px;
+            background-color: var(--secondary);
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: center;
+            border: 1px solid var(--table-border);
+        }
+        th {
+            background-color: var(--table-header);
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        th:first-child, td:first-child {
+            text-align: left;
+            font-weight: 600;
+            color: var(--primary);
+            background-color: #fafaf9;
+        }
+        tbody tr:hover {
+            background-color: #f8fafc;
+        }
+        .notes-section {
+            margin-top: 30px;
+            background-color: var(--bg-main);
+            padding: 20px 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+        .notes-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+        .notes-list {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-main);
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .notes-list li {
+            margin-bottom: 6px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 11px;
+            color: #94a3b8;
+            border-top: 1px solid var(--table-border);
+            padding-top: 15px;
+        }
+        
+        @media print {
+            table, .notes-section {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+            .section-title {
+                page-break-after: avoid;
+                break-after: avoid;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Bảng giá Label vận chuyển nội địa US</h1>
+            <p>Bảng cước phí chính thức áp dụng cho các dịch vụ gửi hàng</p>
+        </div>
+
+        <h2 class="section-title">USPS Ground (3-5 business days)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Weight</th>
+                    <th><0.5 lbs</th>
+                    <th><3 lbs</th>
+                    <th>3-5 lbs</th>
+                    <th>6-7 lbs</th>
+                    <th>8-10 lbs</th>
+                    <th>11-15 lbs</th>
+                    <th>16-20 lbs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Bronze (&lt;20 orders/day)</td><td>$3.65</td><td>$4.30</td><td>$5.30</td><td>$7.30</td><td>$8.20</td><td>$8.70</td><td>$9.90</td></tr>
+                <tr><td>Silver (20-50 orders/day)</td><td>$3.45</td><td>$4.20</td><td>$5.00</td><td>$7.00</td><td>$8.00</td><td>$8.20</td><td>$9.70</td></tr>
+                <tr><td>Gold (50-100 orders/day)</td><td>$3.25</td><td>$4.00</td><td>$4.70</td><td>$6.55</td><td>$7.50</td><td>$8.00</td><td>$9.20</td></tr>
+                <tr><td>Platinum (100-200 orders/day)</td><td>$3.15</td><td>$3.70</td><td>$4.50</td><td>$6.20</td><td>$7.00</td><td>$7.50</td><td>$8.90</td></tr>
+                <tr><td>Diamond (200-500 orders/day)</td><td>$2.95</td><td>$3.50</td><td>$4.30</td><td>$5.90</td><td>$6.50</td><td>$7.00</td><td>$8.50</td></tr>
+                <tr><td>VIP (&gt;500 orders/day)</td><td>$2.85</td><td>$3.25</td><td>$3.90</td><td>$5.30</td><td>$6.00</td><td>$6.70</td><td>$8.00</td></tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">USPS Priority (2-4 business days)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Weight</th>
+                    <th><3 lbs</th>
+                    <th>3-5 lbs</th>
+                    <th>6-7 lbs</th>
+                    <th>8-10 lbs</th>
+                    <th>11-15 lbs</th>
+                    <th>16-20 lbs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Bronze (&lt;20 orders/day)</td><td>$5.20</td><td>$6.20</td><td>$8.20</td><td>$9.00</td><td>$9.70</td><td>$11.70</td></tr>
+                <tr><td>Silver (20-50 orders/day)</td><td>$5.00</td><td>$6.00</td><td>$8.00</td><td>$8.50</td><td>$9.20</td><td>$11.20</td></tr>
+                <tr><td>Gold (50-100 orders/day)</td><td>$4.70</td><td>$5.50</td><td>$7.50</td><td>$8.00</td><td>$9.00</td><td>$11.00</td></tr>
+                <tr><td>Platinum (100-200 orders/day)</td><td>$4.50</td><td>$5.20</td><td>$7.00</td><td>$7.50</td><td>$8.50</td><td>$10.50</td></tr>
+                <tr><td>Diamond (200-500 orders/day)</td><td>$4.00</td><td>$5.00</td><td>$6.50</td><td>$7.00</td><td>$5.20</td><td>$10.00</td></tr>
+                <tr><td>VIP (&gt;500 orders/day)</td><td>$3.55</td><td>$4.50</td><td>$6.00</td><td>$6.50</td><td>$7.90</td><td>$9.50</td></tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">UPS Ground (2-5 business days)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Weight</th>
+                    <th>1-5 lbs</th>
+                    <th>6-15 lbs</th>
+                    <th>16-30 lbs</th>
+                    <th>31-40 lbs</th>
+                    <th>41-50 lbs</th>
+                    <th>51-60 lbs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Bronze (&lt;20 orders/day)</td><td>$4.30</td><td>$7.70</td><td>$9.70</td><td>$12.20</td><td>$15.50</td><td>$23.00</td></tr>
+                <tr><td>Silver (20-50 orders/day)</td><td>$4.10</td><td>$7.20</td><td>$9.20</td><td>$12.00</td><td>$15.20</td><td>$22.50</td></tr>
+                <tr><td>Gold (50-100 orders/day)</td><td>$3.90</td><td>$7.00</td><td>$8.90</td><td>$11.50</td><td>$15.00</td><td>$22.00</td></tr>
+                <tr><td>Platinum (100-200 orders/day)</td><td>$3.70</td><td>$6.50</td><td>$8.50</td><td>$11.20</td><td>$14.70</td><td>$21.70</td></tr>
+                <tr><td>Diamond (200-500 orders/day)</td><td>$3.50</td><td>$6.00</td><td>$8.00</td><td>$11.00</td><td>$14.20</td><td>$21.30</td></tr>
+                <tr><td>VIP (&gt;500 orders/day)</td><td>$3.00</td><td>$5.50</td><td>$7.50</td><td>$10.70</td><td>$13.20</td><td>$21.00</td></tr>
+            </tbody>
+        </table>
+
+        <div class="notes-section">
+            <h3 class="notes-title">Chính sách & Quy định</h3>
+            <ul class="notes-list">
+                <li>Đơn được cut off và tạo label liên tục vào các khung giờ: <strong>18:00</strong> và <strong>23:00</strong> hằng ngày theo giờ Việt Nam.</li>
+                <li>Không hỗ trợ chỉnh sửa hoặc cancel đơn sau thời gian cut off.</li>
+                <li>Trả đơn trong 2-3 tiếng sau khi cut off hằng ngày.</li>
+                <li>Cam kết sử dụng label chính hãng có thông tin đầy đủ trên hệ thống.</li>
+                <li>Không chịu trách nhiệm nếu hàng bị thất lạc do sai địa chỉ, deli đúng địa chỉ nhưng khách làm mất hàng.</li>
+                <li>Hỗ trợ miễn phí chi phí vận chuyển lại nếu đơn bị hoàn trả về do hãng vận chuyển.</li>
+                <li>Hỗ trợ bảo hiểm 40$ + refund chi phí vận chuyển trong trường hợp hàng bị thất lạc (không áp dụng khi sai địa chỉ).</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            Bảng giá này được tạo tự động • Có hiệu lực đến khi có thông báo mới
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+USPS Ground (3-5 business days),,,,,,,,,
+Weight,<0.5 lbs,<3 lbs,3-5 lbs,6-7 lbs,8-10 lbs,11-15 lbs,16-20 lbs,,
+Bronze (<20 orders/day),$3.65,$4.30,$5.30,$7.30,$8.20,$8.70,$9.90,,
+Silver (20-50 orders/day),$3.45,$4.20,$5.00,$7.00,$8.00,$8.20,$9.70,,
+Gold (50-100 orders/day),$3.25,$4.00,$4.70,$6.55,$7.50,$8.00,$9.20,,
+Platinum (100-200 orders/day),$3.15,$3.70,$4.50,$6.20,$7.00,$7.50,$8.90,,
+Diamond (200-500 orders/day),$2.95,$3.50,$4.30,$5.90,$6.50,$7.00,$8.50,,
+VIP (>500 orders/day),$2.85,$3.25,$3.90,$5.30,$6.00,$6.70,$8.00,,- Đơn được cut off và tạo label liên tục vào các khung giờ: 18:00 ; 23:00 hằng ngày theo giờ Việt Nam
+,,,,,,,,,- Không hỗ trợ chỉnh sửa hoặc cancel đơn sau thời gian cut off
+USPS Priority (2-4 business days),,,,,,,,,- Trả đơn trong 2-3 tiếng sau khi cut off hằng ngày
+Weight,,<3 lbs,3-5 lbs,6-7 lbs,8-10 lbs,11-15 lbs,16-20 lbs,,- Cam kết sử dụng label chính hãng có thông tin đầy đủ trên hệ thống
+Bronze (<20 orders/day),,$5.20,$6.20,$8.20,$9.00,$9.70,$11.70,,Không chịu trách nhiệm niếu label được cung cấp sai địa chỉ - Delivered nhưng người nhận làm mất hàng
+Silver (20-50 orders/day),,$5.00,$6.00,$8.00,$8.50,$9.20,$11.20,,Hỗ trợ miễn phí chi phí vận chuyển nếu hàng không thể giao được hoặc trễ do lý do thời tiết đặc biệt
+Gold (50-100 orders/day),,$4.70,$5.50,$7.50,$8.00,$9.00,$11.00,,Hỗ trợ bảo hiểm 40$ + refund chi phí vận chuyển trong trường hợp hàng bị mất hàng trong quá trình vận chuyển (Claim trong 48h)
+Platinum (100-200 orders/day),,$4.50,$5.20,$7.00,$7.50,$8.50,$10.50,,
+Diamond (200-500 orders/day),,$4.00,$5.00,$6.50,$7.00,$5.20,$10.00,,
+VIP (>500 orders/day),,$3.55,$4.50,$6.00,$6.50,$7.90,$9.50,,
+,,,,,,,,,
+UPS Ground (2-5 business days),,,,,,,,,
+Weight,,1-5 lbs,6-15 lbs,16-30 lbs,31-40 lbs,41-50 lbs,51-60 lbs,,
+Bronze (<20 orders/day),,$4.30,$7.70,$9.70,$12.20,$15.50,$23.00,,
+Silver (20-50 orders/day),,$4.10,$7.20,$9.20,$12.00,$15.20,$22.50,,
+Gold (50-100 orders/day),,$3.90,$7.00,$8.90,$11.50,$15.00,$22.00,,
+Platinum (100-200 orders/day),,$3.70,$6.50,$8.50,$11.20,$14.70,$21.70,,
+Diamond (200-500 orders/day),,$3.50,$6.00,$8.00,$11.00,$14.20,$21.30,,
+VIP (>500 orders/day),,$3.00,$5.50,$7.50,$10.70,$13.20,$21.00,,

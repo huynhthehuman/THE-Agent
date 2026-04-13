@@ -1,0 +1,403 @@
+# Document: sop.txt
+
+(THE)[KD-QT-01] Quy trình tạo và đi đơn​
+I. ĐƠN HÀNG FBA​
+1. Xử lý thông tin hàng​
+STT​
+Đầu việc ​
+ 
+Người phụ 
+trách​
+ 
+1​
+Xử lý push khách hàng lên thông tin hàng hoá, điền thông tin lên file​
+ 
+Sale ​
+ 
+2​
+Pick up đầu xe cho khách hàng từ 11h30-12h​
+ 
+Kho​
+ 
+3​
+Gửi thông tin kho 12h: ​
+Nguyen Van Duc - 42 kiện - ups saver, gồm:​
+Nguyen Van Duc: 10 kiện​
+Ly Thi Thom - Nguyen Thi Thu: 8 kiện​
+Ly Thi Thom - Nguyen Khuong Duy: 2 kiện​
+Nguyen Khuong Duy: 2 kiện​
+DUONG THAI LE: 10 kiện​
+Trưởng: 5 kiện​
+Nguyen Thi Thu: 2 kiện​
+PHAM HONG HAI; 3 kiện​
+IAH3 15525 Milner Road 77032 - HOUSTON, TX - United States - 4 
+kiện ​
+MDW2 250 EMERALD DR 60433-3280 - Joliet, IL - United States - 3 
+kiện ​
+MQJ1 4412 W 300 N 46140-7099 - GREENFIELD, IN - United States - 5 
+kiện ​
+TEB9 601 Randolph Road 08873 - SOMERSET, NJ - United States - 5 
+kiện ​
+SCK4 6001 S AUSTIN RD 95215-8354 - STOCKTON, CA - United States 
+- 4 kiện ​
+GYR3 8181 W ROOSEVELT ST PHOENIX, AZ 85043-2356 United States 
+- 2 kiện​
+SBD1        3388 S Cactus Ave BLOOMINGTON, CA 92316-3819 United 
+States - 3 kiện​
+SWF2        76 Patriot Way Hopewell Junction, NY 12533-6159 United 
+States - 3 kiện​
+MEM1        3292 E Holmes Rd Memphis, TN 38118-8102 United States 
+- 2 kiện​
+FWA4        9798 Smith Road FORT WAYNE, IN 46809-9771 United 
+States - 4 kiện​
+CLT2 - 10240 Old Dowd Rd 28214-8082 - Charlotte, NC - United States 
+- 2 kieenj​
+SMF3 3923 S B ST 95206-8202 - Stockton, CA - United States - 1 kieenj​
+ 
+CS ​
+ 
+
+VGT2        6401 Howdy Wells Ave 89115-2013 - LAS VEGAS, NV - United 
+States - 2 kiện​
+RDU4 6309 Bragg Blvd FAYETTEVILLE, NC 28303 United States        US 
+- 2 kiên​
+2. Xử lý cân đo và tính cước​
+STT​
+Đầu việc​
+ 
+Người phụ 
+trách​
+ 
+1​
+Nhận và kiểm tra cân đo (Kiểm tra hàng)​
+VD: ​
+•
+Trường hợp khách gửi 5 kiện kho CLT2 tới kho Human.​
+•
+Đội khai thác nhận và kiểm tra xử lý bill 5 kiện hàng phát hiện chỉ 
+có 4 kiện kho CLT2 và phát sinh 1 kiện MEM1.​
+•
+CS check lại và gửi ảnh lại 5 kiện hàng cho khách. Trường hợp 
+khách dán nhầm bill, đôi khai thác kho sẽ lấy label và dán lại 
+hàng cho khách hàng.​
+ 
+CS​
+ 
+2​
+Gửi cân đo cho khách hàng​
+•
+B1: Lọc tên theo từng kiện hàng của khách​
+VD: Check thông tin trên label gửi đến : FBA kiện hàng tên Nguyễn 
+Văn Đức -> gửi ảnh vào nhóm a Đức​
+•
+B2: Gửi kiện hàng vào nhóm khách hàng​
+ 
+CS​
+ 
+
+3​
+Tính cân đo và cập nhập kích thước cho khách ​
+•
+B1: Nhập cân đo thực tế cùng kích thước Dài * Rộng * Cao vào 
+bảng kê khai hàng​
+•
+B2: Nhập cân nặng tính cước cuối cùng vào bảng kê khai chi tiết ​
+ 
+CS​
+ 
+3. Theo dõi và cập nhật trạng thái​
+STT​
+Đầu việc​
+ 
+Người phụ 
+trách​
+ 
+1​
+•
+Bước 1: Vào nhóm đối tác Head Han - check thông tin kho, 
+copy 1Z84Y8200433822714 - NGUYEN VAN DUC GYR2 dán vào 
+bảng kê khai​
+ 
+CS​
+Sale​
+ 
+
+•
+Bước 2: Tracking sau khi liệt kê bảng kê khai hàng​
+2​
+Cập nhập trạng thái và kiểm tra đơn hàng (Delivered/ In-transit/ 
+Delay) và update vào file của khách (check vào đầu ngày hoặc 
+cuối ngày)​
+•
+Delivery: Check track trên ups 1Z84Y8200433822714 ​
+•
+In transit: Check track trên 1Z84Y8200493109990 - 17track thể 
+hiện in-transit sẽ để trạng thái in-transit trên bảng kê khai​
+ 
+CS ​
+ 
+
+II. ĐƠN HÀNG FBM ​
+Đơn US đi qua HPW: mrbanggia@thehumaninc.com/ Thehuman@123​
+Đơn ngoài US đi qua YunExpress: thehumanexpress / Saomabietduoc123​
+1. TẠO ĐƠN​
+1.1 Đơn US bình thường và outside US  - Đã có trên hệ thống ​
+Tạo đơn trên hệ thống THE qua các file template hoặc tạo đơn trực tiếp​
+Các lưu ý khi tạo đơn:​
+1.1.1 Đơn US​
+•
+Tên người nhận:​
+◦
+Fast Track: Không có quy tắc gì​
+◦
+Saver: Tên phải có 2 từ trở lên, nếu chỉ có 1 từ thì có thể hỏi lại khách hoặc thêm số 1 ở đầu. ​
+Ví dụ: Anna phải đổi thành 1 Anna ​
+•
+Điền value đơn hàng là 30 USD​
+•
+Phần zip code chú ý để dạng text để không bị mất số 0 ở đầu​
+•
+Khi upload đơn lên hệ thống, nếu có cảnh báo địa chỉ (dấu chấm than vàng):​
+◦
+Check lại địa chỉ trên USPS qua link: ZIP Code™ by Address​
+◦
+Nếu địa chỉ ban đầu của khách chỉ có 5 kí tự, nhưng check trên USPS lại có thêm phần đuôi 4 số phía sau thì địa chỉ 
+vẫn ok, bỏ cảnh báo địa chỉ và ấn tạo tracking bình thường​
+◦
+Nếu địa chỉ ban đầu của khách đã có sẵn phần đuôi 4 số phía sau và khác với địa chỉ USPS ghi nhận thì phải hold đơn 
+và check lại với khách ​
+
+◦
+Nếu có 1 phần nào khác trong địa chỉ của khách khác USPS thì check trên Google Map, có thể khách điền sai chính tả 
+(CS tự sửa địa chỉ và cho đi đơn), nếu vẫn không được thì hold đơn và check với khách​
+1.1.2 Đơn outside US - Đã có trên hệ thống​
+Khách hàng​
+•
+Đội sale/support lên hệ thống để lấy lại file template có Sheet 1 (thêm 3 ô input IOSS, EORI, VAT) và Sheet 3 (danh sách 
+các quốc gia) ​
+[THE] _ User Guide Customer​
+•
+Số điện thoại: Sẽ không bắt buộc với US, nhưng bắt buộc với các quốc gia ngoài US ​
+[THE] _ User Guide Customer​
+•
+Zipcode: Hỗ trợ nhập chữ và dấu cách để phù hợp với các quốc gia ngoài US ​
+[THE] _ User Guide Customer​
+•
+Các nước không có State code thì nên điền State code giống với City ​
+[THE] _ User Guide Customer​
+•
+Phần giá trị khai báo sẽ validate như sau ​
+[THE] _ User Guide Customer​
+◦
+Đối với các quốc gia thuộc EU1, EU2 < 150 USD​
+◦
+UK (hay GB) < 135 USD​
+◦
+Mexico < 1,000 USD​
+◦
+Newzealand < 680 USD​
+◦
+Canada < 99 USD​
+◦
+Japan < 135 USD ​
+◦
+Singapore < 280 USD​
+◦
+Australia (AU) < 700 USD​
+◦
+US < 800 USD (như hiện tại)​
+◦
+HongKong < 800 USD (như hiện tại)​
+◦
+Switzerland (CH) < 70 USD​
+•
+Phần check cảnh báo địa chỉ sẽ chỉ check cho US, không check cho các quốc gia ngoài US ​
+[THE] _ User Guide Customer​
+•
+Phí GTGT EU - Sẽ tính 29% * giá trị khai báo đối với đơn đi EU1, EU2 mà không có Mã IOSS ​
+[THE] _ User Guide Customer
+•
+Phí GTGT UK - Sẽ tính 29% * giá trị khai báo đối với đơn đi GB mà không có MÃ VAT ​
+[THE] _ User Guide Customer​
+•
+Quản lý Mã IOSS ​
+[THE] _ User Guide Customer​
+•
+Phí cao điểm vẫn đang áp dụng và áp dụng với nước US - đi Myib và US - HPW, các nước ngoài US sẽ không áp dụng ​
+[THE] _ User Guide Customer​
+CMS​
+•
+Quản lý Mã IOSS : ​
+[THE] _ User Guide Admin​
+
+1.2 Đơn US Zone 9 - Tạo đơn hỗ trợ khách hàng ​
+Các đơn US có địa chỉ trong bảng trên phải tạo trên hệ thống HPW:  Shipments​
+Vào Import Shipment để download file template hoặc Create Shipment để tạo đơn trực tiếp trên HPW.​
+Lưu ý: ​
+•
+Bắt buộc điền Phone Number, nếu khách không có phải điền 0​
+•
+Phần Shipping Postal Code chú ý để dạng text để không bị mất số 0 ở đầu​
+•
+Item name: Điền tên sản phẩm tiếng Anh theo cột en_name - Sheet 2 trong file template của THE​
+•
+Item SKU: Điền giống order ID, nếu khách có SKU thì điền theo của khách
+•
+Item HsCode: Điền theo cột HS_code - Sheet 2 trong file template của THE, nhớ bỏ phần đuôi STT phía sau​
+
+Ví dụ:​
+STT 265: Metal door sign - HS code 8306309900265​
+Khi tạo đơn trên HPW phải bỏ đuôi 265 ở cuối đi, chỉ điền 8306309900​
+•
+Service: Các đơn địa chỉ zone 9 chỉ chọn được dịch vụ US Standard (Thời gian vận chuyển: 15-17 ngày làm việc; Thời gian 
+active tracking: tầm 5-7 ngày kể từ ngày bay)​
+Sau khi upload đơn hàng lên hệ thống HPW, nếu đơn hàng ở trong mục Pending thì check lại địa chỉ 1 lần nữa và ấn chọn 
+Buy label để mua tracking. ​
+1.3 Đơn đi qua BELL​
+•
+Khách hàng hoặc CS tạo đơn trên hệ thống THE để lấy tracking (Chọn dịch vụ Pre-clear hoặc Pre-clear 2 - Hỏi anh Linh)​
+•
+Sau khi tạo tracking thành công, điền thông tin các đơn hàng vào file manifest của Bell. File ví dụ: ​
+Bell Manifest 13.12 (final).xlsx
+54.75KB
+•
+Điền từ cột ConsigneeName trở đi, cột HAWBWeight để đơn vị kg, các cột ProductURL, HTSNumber, LastMileCarrier 
+không cần điền.​
+•
+Gửi file manifest trong nhóm Zalo BELL EPK - THE - Vận Hành. ​
+•
+Follow tracking và update trạng thái cho khách khi cần thiết.​
+1.4 Đơn đi qua UPS​
+
+•
+CS gửi thông tin người nhận, địa chỉ, sản phẩm, cân nặng, kích thước qua GPS.​
+•
+Khi GPS gửi lại label và tracking number thì gửi label cho khách hoặc kho, và update tracking number lên file.​
+•
+Sau khi kho gửi hàng cho GPS, bên GPS sẽ chụp lại các đơn đã nhận. CS check lại thông tin đơn hàng cùng với cân nặng, 
+kích thước xem đã khớp chưa.​
+•
+Follow tracking và update trạng thái cho khách khi cần thiết.​
+1.5 Quy tắc set value đi đơn​
+•
+Các nước EU bao gồm: Belgium, Bulgaria, Czech Republic, Germany, Estonia, Spain, France, Greece, Croatia, Hungary, 
+Lithuania, Latvia, Poland, Portugal, Romania, Sweden, Slovakia, Austria, Denmark, Finland, Ireland, Italy, Malta, 
+Netherlands, Slovenia, Luxembourg, đảo Síp cần có mã IOSS và để value 30 USD.​
+•
+Norway cần có mã VOEC và để value 30 USD.​
+•
+Canada để value 14 USD để tránh phát sinh thuế.​
+•
+United Kingdom nếu không có VAT number để value 19 USD, nếu có VAT number để 30 USD.​
+•
+Các nước khác bao gồm: Switzerland, New Zealand, Mexico, Australia, Hong Kong, Singapore, Japan, Israel, US ko cần mã 
+IOSS và VAT number, để value 30 USD.​
+2. HỦY ĐƠN​
+2.1 Đơn ở trạng thái Pending​
+Khách hàng có thể chủ động hủy luôn, không cần liên hệ CS.​
+2.2 Đơn mới tạo tracking, kho THE chưa nhận hàng​
+Đơn ở trạng thái này khách hàng có thể tự cancel đơn được, tuy nhiên có thể áp dụng phí hủy track tùy vào dịch vụ mà khách 
+hàng chọn.​
+•
+Saver: Không mất phí hủy track​
+•
+Fast Track: Phí hủy track $0.8/ đơn​
+2.3 Đơn đã gửi sang kho THE, chưa gửi sang các bên vận chuyển​
+CS log in vào tài khoản support (không phải tài khoản của khách) để cancel, nhớ nhắn kho hold lại đơn để không gửi sang 
+các bên vận chuyển khác.​
+2.4 Đơn đã xuất kho THE, đã gửi sang các bên vận chuyển​
+Nhắn các bên vận chuyển trên các group Zalo để báo hold lại hàng.​
+Nếu hold được, CS chủ động cancel đơn, báo kho lưu ý lấy hàng về.​
+Nếu không hold được, đơn đã đi thì nhắn khách để nắm thông tin.​
+Lưu ý với CS​
+Nếu đơn hàng đã chuyển sang trạng thái In-transit thì nhắn team IT trong group [THE] _ IT support Kho trên Lark, nhờ 
+chuyển trạng thái sang Pre-transit rồi cancel. ​
+3. ĐỔI ĐỊA CHỈ/ THÔNG TIN ĐƠN HÀNG​
+3.1 Đơn ở trạng thái Pending​
+Khách hàng có thể chủ động sửa đơn, không cần liên hệ CS.​
+3.2 Đơn mới tạo tracking, kho THE chưa nhận hàng​
+Khách hàng:​
+
+•
+Chủ động cancel đơn, áp dụng phí hủy track như trên​
+•
+Chủ động tạo đơn mới và dán label​
+Kho THE và CS: Không cần làm gì​
+3.3 Đơn đã gửi sang kho THE, chưa gửi sang các bên vận chuyển​
+Khách hàng:​
+•
+Chủ động cancel đơn, áp dụng phí hủy track như trên​
+•
+Chủ động tạo đơn mới và báo CS​
+CS: Báo kho hold lại đơn và gửi label mới cho kho​
+Kho THE: Dán label mới cho khách và cho đi đơn​
+3.4 Đơn đã xuất kho THE, đã gửi sang các bên vận chuyển​
+CS: Báo bên vận chuyển hold lại đơn ​
+•
+Nếu hold dc thì CS chủ động cancel label cũ, nhắn khách tạo label mới và CS gửi file label mới cho bên vận chuyển, nhờ 
+bên đó dán hộ label mới
+•
+Nếu không hold được thì thông tin cho khách biết​
+Khách: Tạo label mới khi CS yêu cầu và báo CS lên lấy label​
+Lưu ý với CS​
+Nếu đơn hàng đã chuyển sang trạng thái In-transit thì nhắn team IT trong group [THE] _ IT support Kho trên Lark, nhờ 
+chuyển trạng thái sang Pre-transit rồi cancel. ​
+4. FOLLOW TRACKING​
+4.1 Đơn US (bao gồm cả Zone 9)
+Check trạng thái tracking các đơn đầu 92 trên USPS: USPS TRACKING​
+Check trạng thái các đơn đầu IZ trên UPS: UPS TRACKING​
+
+4.2 Đơn outside US​
+Check qua YunExpress: YUNEXPRESS TRACKING​
+Với các đơn đi qua Yun (đầu YT), khi check trên Yun sẽ thấy có local tracking number và hãng vận chuyển nội địa của quốc gia 
+người nhận, CS nhớ check kĩ trạng thái của hãng nội địa này.​
+Ví dụ: ​
+YunExpress tracking number: YT2435321906000254​
+Local tracking number: CA651483459IE​
+Hãng vận chuyển nội địa: Anpost​
+Khi check trên website của hãng nội địa sẽ ra như thế này: CA651483459IE​
+
+4.3 Lưu ý với CS​
+•
+Số lượng tracking number nhiều có thể check trên All-in-One Global Package Tracking | 17TRACK, tuy nhiên đôi lúc 
+17track sẽ không update kịp thời trạng thái, CS vẫn cần vào các trang tracking chính thức để xem. ​
+•
+Ngoài ra có thể check trên Global Package Tracking - AfterShip, tuy nhiên đôi lúc cũng gặp tình trạng tương tự như 
+17track.​
+•
+Khi khách hàng hỏi về trạng thái của 1 order, CS check trên hệ thống xem order đó đi qua hãng vận chuyển nào và trạng 
+thái ra sao.​
+•
+Nếu trạng thái tracking quá 5 ngày chưa update, CS nhắn hỏi hãng vận chuyển tương ứng rồi update lại cho  khách hàng, 
+chú ý dùng ngôn từ phù hợp, không copy y nguyên thông báo từ các hãng. Nếu đơn đi qua HPW thì điền thông tin vào 
+trong file này và báo HPW check: [HPW] SUPPORT - THE HUMAN​
+•
+CS chủ động check trạng thái tracking number hàng ngày và báo cho khách biết.​
+•
+Các đơn bị return vì không giao được/ lỗi địa chỉ thì trước hết nhắn khách contact PO xem có kịp giữ hàng không. ​
+◦
+Nếu khách không tự pick up được thì hàng có thể return về kho tại nước người nhận, lúc này bên vận chuyển sẽ thông 
+báo qua Zalo về phí reship và hạn reship để THE báo cho khách hàng. ​
+◦
+Hàng bị return có thể sẽ bị thất lạc, trong trường hợp này thì nhắn khách tự đưa ra phương án xử lý cho khách Mỹ, THE 
+sẽ hỗ trợ đi đơn nếu chọn replace đơn hàng.​
+•
+CS có thể tham khảo các trạng thái đơn hàng trong link dưới đây để trả lời khách: Where is my package? Tracking Status 
+Help​
+5. ĐƠN HÀNG TRONG HCM​
+Với các đơn hàng trong HCM, kho THE ở Hà Nội không trực tiếp nhận hàng nên CS cần: 
+•
+Check thông báo đã gửi hàng của khách HCM ​
+
+•
+Check thông báo đã nhận được hàng của kho HCM trên Zalo (143_320: HPW-The Human và THE - Yun Express Vận 
+hành)​
+•
+Check các đơn này trên hệ thống của HPW và YUN xem đã quét nhận hàng chưa, có thay đổi cân nặng, kích thước so với 
+ban đầu không. Nếu có, cần báo team IT trong group [THE] _ IT support Kho sửa lại cân nặng, kích thước giống bên hãng 
+để báo giá cước chính xác cho khách​
+Ví dụ: ​
+Giao diện thay đổi kích thước trên HPW​
+Giao diện thay đổi kích thước trên YUN​
+•
+Sau đó báo team IT chuyển trạng thái đơn hàng trên hệ thống THE từ Pre-transit sang In-transit. ​
