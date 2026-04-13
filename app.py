@@ -16,8 +16,8 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Cấu hình AI
 genai.configure(api_key=GEMINI_API_KEY)
-# Sử dụng mô hình AI siêu ổn định (Không dùng bản thử nghiệm 2.5 để tránh bị khóa giới hạn)
-model = genai.GenerativeModel('gemini-2.0-flash')
+# Sử dụng mô hình AI siêu tốc, không bị giới hạn quota của Google
+model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
 app = Flask(__name__)
 
