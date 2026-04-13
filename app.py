@@ -80,7 +80,10 @@ def generate_ai_response(user_text):
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
-        return f"Lỗi xử lý AI: {str(e)}"
+        err = str(e)
+        if "429" in err or "exceeded your current quota" in err:
+            return "⏳ Sếp hỏi dồn dập quá tôi suy nghĩ chưa ra! (Lỗi vượt quá 5 tin nhắn/phút của bản AI Miễn phí). Sếp vui lòng thư giãn 30 giây rồi hỏi lại nhé!"
+        return f"Lỗi xử lý AI: {err}"
 
 @app.route('/webhook/event', methods=['POST'])
 def lark_event_handler():
