@@ -4,7 +4,6 @@ import requests
 from flask import Flask, request, jsonify
 import google.generativeai as genai
 from dotenv import load_dotenv
-from pyngrok import ngrok
 
 # Tải cấu hình từ .env
 load_dotenv()
@@ -112,16 +111,5 @@ def lark_event_handler():
     return jsonify({"status": "ok"}), 200
 
 if __name__ == '__main__':
-    print("🔄 Đang khởi tạo đường hầm Internet (Ngrok)...")
-    try:
-        public_url = ngrok.connect(5000).public_url
-        print("\n" + "="*70)
-        print("✅ HỆ THỐNG TỰ ĐỘNG CỦA THE AGENT ĐÃ SẴN SÀNG!")
-        print(f"👉 HÃY SAO CHÉP ĐƯỜNG LINK NÀY DÁN VÀO EVENT REQUEST URL CỦA LARK:")
-        print(f"   {public_url}/webhook/event")
-        print("="*70 + "\n")
-    except Exception as e:
-        print(f"⚠️ Không thể bắt đầu Ngrok tự động: {e}")
-        print("Chạy Máy chủ ở chế độ Localhost.")
-        
-    app.run(port=5000, debug=False, use_reloader=False)
+    print("🚀 THE Agent Server đang chạy...")
+    app.run(port=5000, debug=False)
