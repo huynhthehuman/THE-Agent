@@ -34,13 +34,21 @@ def get_tenant_access_token():
     response = requests.post(url, json=payload)
     if response.status_code == 200:
         data = response.json()
+        if data.get("code") != 0:
+            print(f"❌ Lỗi Token Lark: {data}")
         TENANT_ACCESS_TOKEN = data.get("tenant_access_token", "")
         return TENANT_ACCESS_TOKEN
+    else:
+        print(f"❌ API Token Thất Bại: {response.text}")
     return None
 
 def send_lark_reply(message_id, text):
     """Phản hồi lại đoạn chat chứa message_id trên Lark"""
     token = get_tenant_access_token()
+    if not token:
+        print("❌ Hủy gửi tin: Không có Token (Do sai App ID/Secret)")
+        return
+        
     url = f"https://open.larksuite.com/open-apis/im/v1/messages/{message_id}/reply"
     headers = {
         "Content-Type": "application/json; charset=utf-8",
@@ -50,7 +58,11 @@ def send_lark_reply(message_id, text):
         "content": json.dumps({"text": text}),
         "msg_type": "text"
     }
-    requests.post(url, headers=headers, json=payload)
+    resp = requests.post(url, headers=headers, json=payload)
+    if resp.status_code != 200 or resp.json().get("code") != 0:
+        print(f"❌ Lỗi gửi tin (Lark chặn): {resp.text}")
+    else:
+        print(f"✅ Đã trả lời thành công cho message_id: {message_id}")
 
 def generate_ai_response(user_text):
     """Nạp file Kiến thức vận hành THE Agent và yêu cầu AI suy luận"""
