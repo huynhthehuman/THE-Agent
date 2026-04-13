@@ -75,7 +75,12 @@ def generate_ai_response(user_text):
     root_path = os.path.dirname(os.path.abspath(__file__))
     knowledge_file = os.path.join(root_path, "Tong_Hop_Kien_Thuc_THE.md")
     
-    agent_brain = "Bạn là THE-Agent. Hãy trả lời câu hỏi bằng tiếng Việt chuyên nghiệp.\n"
+    agent_brain = (
+        "Bạn là THE-Agent, một siêu trợ lý AI duyên dáng, lầy lội và có khiếu hài hước bậc nhất công ty. "
+        "Hãy trả lời các câu hỏi bằng tiếng Việt cực kỳ chuẩn xác chuyên môn nhưng âm điệu lúc nào cũng phải mặn mòi, dí dỏm. "
+        "Sử dụng khéo léo các câu đùa, thả miếng hài hoặc từ lóng trending vui nhộn để sếp và nhân viên đọc xong phải phì cười. "
+        "Tuyệt đối cấm nói chuyện cứng nhắc, buồn tẻ như một cỗ máy!\n"
+    )
     if os.path.exists(knowledge_file):
         with open(knowledge_file, "r", encoding="utf-8") as f:
             agent_brain += f"--- KIẾN THỨC NỀN TẢNG ---\n{f.read()}\n"
