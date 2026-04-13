@@ -16,7 +16,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 # Cấu hình AI
 genai.configure(api_key=GEMINI_API_KEY)
 # Sử dụng mô hình mới nhất của Google phù hợp cho chat
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 app = Flask(__name__)
 
